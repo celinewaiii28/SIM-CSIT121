@@ -1,0 +1,30 @@
+Day 2 - Objective 
+
+- How to design a class?
+  : private instance variables
+  : default constructor (public) 
+  : other constructor(s) (public)
+  : copy constructor (public)
+  : accessor methods (usually public)
+  : mutator methods  (usually public)
+  : other methods (public or private)
+  ==> A simple case study, starting from a circle class
+      what is "this"?
+  ==> Revisit yesterday's example ... 
+  ==> UML diagram
+  
+- passing by value versus passing by reference
+
+- Arrays
+  : 1D arrays
+  : 2D arrays
+   ==> how to create?
+   ==> passing arrays to methods
+   ==> some applications
+  
+- ArrayList
+- Case study (all features)
+  
+
+
+ 

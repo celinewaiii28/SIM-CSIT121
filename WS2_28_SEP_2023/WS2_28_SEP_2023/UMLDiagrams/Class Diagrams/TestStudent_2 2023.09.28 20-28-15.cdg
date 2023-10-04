@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TestStudent_2">
+  <ClassDiagramComponents>
+    <Class name="Student" package="" visibility="public" xPosition="621.0" yPosition="57.0">
+      <Fields>
+        <Field name="NO" type="int" visibility="private" isStatic="true"/>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="gender" type="Gender" visibility="private"/>
+        <Field name="age" type="int" visibility="private"/>
+        <Field name="subject1" type="Subject" visibility="private"/>
+        <Field name="subject2" type="Subject" visibility="private"/>
+        <Field name="mark1" type="double" visibility="private"/>
+        <Field name="mark2" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="Gender" name="gender"/>
+          <Argument type="int" name="age"/>
+          <Argument type="Subject" name="subject1"/>
+          <Argument type="Subject" name="subject2"/>
+          <Argument type="double" name="mark1"/>
+          <Argument type="double" name="mark2"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Student" name="s"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getGender" returnType="Gender" visibility="public"/>
+        <Method name="getAge" returnType="int" visibility="public"/>
+        <Method name="getSubject1" returnType="Subject" visibility="public"/>
+        <Method name="getSubject2" returnType="Subject" visibility="public"/>
+        <Method name="getMark1" returnType="double" visibility="public"/>
+        <Method name="getMark2" returnType="double" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setGender" returnType="void" visibility="public">
+          <Argument type="Gender" name="g"/>
+        </Method>
+        <Method name="setAge" returnType="void" visibility="public">
+          <Argument type="int" name="age"/>
+        </Method>
+        <Method name="setSubjects" returnType="void" visibility="public">
+          <Argument type="Subject" name="s1"/>
+          <Argument type="Subject" name="s2"/>
+        </Method>
+        <Method name="setMarks" returnType="void" visibility="public">
+          <Argument type="double" name="mark1"/>
+          <Argument type="double" name="mark2"/>
+        </Method>
+        <Method name="getAverage" returnType="double" visibility="public"/>
+        <Method name="getFinalMark" returnType="int" visibility="public"/>
+        <Method name="getAGrade" returnType="String" visibility="public">
+          <Argument type="int" name="mark"/>
+        </Method>
+        <Method name="displayMessage" returnType="void" visibility="public">
+          <Argument type="String" name="grade"/>
+        </Method>
+        <Method name="displayInfo" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TestStudent_2" package="" visibility="public" xPosition="142.0" yPosition="494.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getMark" returnType="double" visibility="private" isStatic="true"/>
+        <Method name="getGender" returnType="Gender" visibility="private" isStatic="true"/>
+        <Method name="getAge" returnType="int" visibility="private" isStatic="true"/>
+        <Method name="getASubject" returnType="Subject" visibility="private" isStatic="true"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Enum name="Subject" package="" visibility="public" xPosition="159.0" yPosition="280.0">
+      <Literals>
+        <Literal name="CSIT111"/>
+        <Literal name="CSIT121"/>
+        <Literal name="CSIT113"/>
+        <Literal name="CSIT128"/>
+      </Literals>
+    </Enum>
+    <Enum name="Gender" package="" visibility="public" xPosition="159.0" yPosition="102.0">
+      <Literals>
+        <Literal name="Male"/>
+        <Literal name="Female"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="subject1" source="Student" target="Subject" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="subject2" source="Student" target="Subject" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="gender" source="Student" target="Gender" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
