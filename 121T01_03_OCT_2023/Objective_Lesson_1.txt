@@ -1,0 +1,20 @@
+Objective
+
+- A brief introduction to CSIT121
+- Introduction to OO design
+- Case study
+  : Starting from a simple application, we will explore
+    -> how to design a java program?
+	-> selection and repetition design
+	    ==> data validation
+	-> user defined methods
+    -> static methods versus instance methods
+	-> commnuitcation between classes
+	-> The use of of Random class methods
+	-> Array and ArrayList
+	   ==> how to do deep copying if arrays or ArrayList's 
+               are instance variables
+- A brief introduction to Lab 1 ==> out today
+- Register your tutorial group with MY moodle
+
+   
