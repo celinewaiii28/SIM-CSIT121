@@ -1,0 +1,11 @@
+Objective
+
+- Can we have private constructor?
+- A deeper look in classes and objects
+- format method in String class
+- toString method
+- Runtime error (exception) 
+- A list of objects
+- multiple constructors
+
+==> will enable the link of Lab 2 tonight
