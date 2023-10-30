@@ -1,0 +1,17 @@
+Objective Lesson 3
+
+- Revisit Last examples
+- More on this
+- How to compare two objects
+  -> the use of "this" again
+- Composite classes
+- enum class 
+  -> a more detailed one
+- String class
+- static members defined inside a class
+- the final instance variables
+- A case study
+
+==> scope of Lab 2 and A1 in order, A1 is out too later
+
+==> next week during tutorial Assignment 1 Part  2 (~40 to 50 MCQ)

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TestTriangle_2d">
+  <ClassDiagramComponents>
+    <Class name="Triangle" package="" visibility="public" xPosition="157.0" yPosition="39.0">
+      <Fields>
+        <Field name="a" type="int" visibility="private"/>
+        <Field name="b" type="int" visibility="private"/>
+        <Field name="c" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="a"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+          <Argument type="int" name="c"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Triangle" name="t"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getA" returnType="int" visibility="public"/>
+        <Method name="getB" returnType="int" visibility="public"/>
+        <Method name="getC" returnType="int" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+        </Method>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+          <Argument type="int" name="c"/>
+        </Method>
+        <Method name="area" returnType="double" visibility="private"/>
+        <Method name="perimeter" returnType="int" visibility="private"/>
+        <Method name="getArea" returnType="double" visibility="public"/>
+        <Method name="getPerimeter" returnType="int" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TestTriangle_2d" package="" visibility="public" xPosition="512.0" yPosition="127.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="displayInfo" returnType="void" visibility="private" isStatic="true">
+          <Argument type="Triangle" name="t"/>
+        </Method>
+        <Method name="constructAList" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Triangle&gt;" name="alist"/>
+        </Method>
+        <Method name="displayAList" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Triangle&gt;" name="alist"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="TestTriangle_2d" target="Triangle" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

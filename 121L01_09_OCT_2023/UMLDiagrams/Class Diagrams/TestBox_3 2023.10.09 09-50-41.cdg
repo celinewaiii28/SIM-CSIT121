@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TestBox_3">
+  <ClassDiagramComponents>
+    <Class name="Triangle" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="a" type="int" visibility="private"/>
+        <Field name="b" type="int" visibility="private"/>
+        <Field name="c" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="a"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+          <Argument type="int" name="c"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Triangle" name="t"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getA" returnType="int" visibility="public"/>
+        <Method name="getB" returnType="int" visibility="public"/>
+        <Method name="getC" returnType="int" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+        </Method>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+          <Argument type="int" name="c"/>
+        </Method>
+        <Method name="area" returnType="double" visibility="private"/>
+        <Method name="perimeter" returnType="int" visibility="private"/>
+        <Method name="getArea" returnType="double" visibility="public"/>
+        <Method name="getPerimeter" returnType="int" visibility="public"/>
+        <Method name="getLarger" returnType="Triangle" visibility="public">
+          <Argument type="Triangle" name="t"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Box" package="" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="t" type="Triangle" visibility="private"/>
+        <Field name="height" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Triangle" name="t"/>
+          <Argument type="double" name="height"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Box" name="b"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getTriangle" returnType="Triangle" visibility="public"/>
+        <Method name="getHeight" returnType="double" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="Triangle" name="t"/>
+          <Argument type="double" name="height"/>
+        </Method>
+        <Method name="volume" returnType="double" visibility="public"/>
+        <Method name="getVolume" returnType="double" visibility="public"/>
+        <Method name="getLarger" returnType="Box" visibility="public">
+          <Argument type="Box" name="b"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TestBox_3" package="" visibility="public" xPosition="629.0" yPosition="59.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getValue" returnType="double" visibility="private" isStatic="true"/>
+        <Method name="constructAList" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Box&gt;" name="alist"/>
+        </Method>
+        <Method name="displayAList" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Box&gt;" name="alist"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="t" source="Box" target="Triangle" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Box" target="Triangle" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="TestBox_3" target="Box" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
