@@ -1,0 +1,11 @@
+Objective Lesson 8
+
+- Case study
+   : explore polymorphism and interfaces with unrelated classes 
+   
+- May be a bit of GUI
+
+Don't forget next week: A2P2
+
+Today demo Lab 1 / 2 / A2P1 (only to those who have graded_
+ ==> stop demo around 2:50 pm

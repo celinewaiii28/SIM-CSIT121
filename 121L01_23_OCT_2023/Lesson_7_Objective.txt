@@ -1,0 +1,22 @@
+Lesson 7 objective
+
+- Revisit last example on abstract class
+  
+- Polymorphism
+  : more on abstract class 
+  : getName and getClass methods
+  : instanceof operator
+  : ....
+  : interface 
+
+- May be ... a bit of GUI
+  
+Scope of A2 in order ...
+   - Next week A2P2
+
+Order of teaching
+- GUI	==> Lab 3 and A3
+- Exception handling  ==> Lab 4
+- Lambda and Stream
+- Object file processing
+- A bit of recursion

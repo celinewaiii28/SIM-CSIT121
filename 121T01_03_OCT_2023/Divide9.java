@@ -14,36 +14,33 @@
 
 import java.util.Scanner;
 
-class Divide9
-{
-	public static void main (String [ ] args)
-	{
-		//Construct a scanner class object
-		Scanner input = new Scanner (System.in);
-		
-		//Declare variable
+class Divide9 {
+	public static void main(String[] args) {
+		// Construct a scanner class object
+		Scanner input = new Scanner(System.in);
+
+		// Declare variable
 		int n;
-		
-		//Read in an integer
-		System.out.print ("Enter a positive integer: ");
+
+		// Read in an integer
+		System.out.print("Enter a positive integer: ");
 		n = input.nextInt();
-		
-		//To get the sum of digits
+
+		// To get the sum of digits
 		int sum = 0;
 		int lastDigit;
-		
-		while (n > 0)
-		{
-			lastDigit = n%10;
+
+		while (n > 0) {
+			lastDigit = n % 10;
 			sum = sum + lastDigit;
-			
+
 			n = n / 10;
 		}
-		
-		//Test divisible by 9
+
+		// Test divisible by 9
 		if (sum % 9 == 0)
-			System.out.println ("--> Divisible by 9");
+			System.out.println("--> Divisible by 9");
 		else
-			System.out.println ("--> Not divisible by 9");
+			System.out.println("--> Not divisible by 9");
 	}
 }

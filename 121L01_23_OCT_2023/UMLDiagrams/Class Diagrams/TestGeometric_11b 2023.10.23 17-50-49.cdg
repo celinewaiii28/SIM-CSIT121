@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TestGeometric_11b">
+  <ClassDiagramComponents>
+    <Class name="Geometric" package="" visibility="public" isAbstract="true" xPosition="291.0" yPosition="183.0">
+      <Fields>
+        <Field name="color" type="String" visibility="protected"/>
+        <Field name="isFilled" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Geometric" name="g"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="getIsFilled" returnType="boolean" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Circle" package="" visibility="public" isAbstract="true" xPosition="672.0" yPosition="35.0">
+      <Fields>
+        <Field name="a" type="double" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="double" name="a"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Circle" name="c"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getRadius" returnType="double" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="double" name="a"/>
+        </Method>
+        <Method name="area" returnType="double" visibility="public"/>
+        <Method name="perimeter" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Cylinder" package="" visibility="public" xPosition="1063.0" yPosition="71.0">
+      <Fields>
+        <Field name="height" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="double" name="radius"/>
+          <Argument type="double" name="height"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Cylinder" name="cy"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getHeight" returnType="double" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="double" name="radius"/>
+          <Argument type="double" name="height"/>
+        </Method>
+        <Method name="volume" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Square" package="" visibility="public" xPosition="726.0" yPosition="361.0">
+      <Fields>
+        <Field name="a" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="int" name="a"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Square" name="sq"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getLength" returnType="int" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="area" returnType="double" visibility="public"/>
+        <Method name="perimeter" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Triangle" package="" visibility="public" xPosition="251.0" yPosition="510.0">
+      <Fields>
+        <Field name="a" type="double" visibility="private"/>
+        <Field name="b" type="double" visibility="private"/>
+        <Field name="c" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="double" name="a"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="double" name="a"/>
+          <Argument type="double" name="b"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="double" name="a"/>
+          <Argument type="double" name="b"/>
+          <Argument type="double" name="c"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Triangle" name="t"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getA" returnType="double" visibility="public"/>
+        <Method name="getB" returnType="double" visibility="public"/>
+        <Method name="getC" returnType="double" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="double" name="a"/>
+        </Method>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="double" name="a"/>
+          <Argument type="double" name="b"/>
+        </Method>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="double" name="a"/>
+          <Argument type="double" name="b"/>
+          <Argument type="double" name="c"/>
+        </Method>
+        <Method name="area" returnType="double" visibility="public"/>
+        <Method name="perimeter" returnType="double" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TestGeometric_11b" package="" visibility="public" xPosition="778.0" yPosition="658.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getValue" returnType="double" visibility="private" isStatic="true"/>
+        <Method name="getColor" returnType="String" visibility="private" isStatic="true"/>
+        <Method name="getTF" returnType="boolean" visibility="private" isStatic="true">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="constructAList" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;MyInterface&gt;" name="alist"/>
+        </Method>
+        <Method name="displayAList" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;MyInterface&gt;" name="alist"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="MyInterface" package="" visibility="public" xPosition="34.0" yPosition="235.0">
+      <Methods>
+        <Method name="area" returnType="double" visibility="public"/>
+        <Method name="perimeter" returnType="double" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Interface name="MyInterface2" package="" visibility="public" xPosition="342.0" yPosition="20.0">
+      <Methods>
+        <Method name="volume" returnType="double" visibility="public"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Geometric" target="MyInterface"/>
+    <IsRelation name="is" source="Cylinder" target="Circle"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Circle" target="MyInterface2"/>
+    <IsRelation name="is" source="Circle" target="Geometric"/>
+    <IsRelation name="is" source="Triangle" target="Geometric"/>
+    <IsRelation name="is" source="Square" target="Geometric"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
