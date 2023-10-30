@@ -1,0 +1,15 @@
+Objective Lesson 4
+
+- Revisit last example
+  : The has-a relationship
+- Inheritance - subclasses - superclasses
+  : The is-a relationship
+- The use of "extends"
+- The use of super versus the use of "this"
+- The use of protected
+- A list of objects, let Java enjoy the polymorphism!!!
+
+ Next week, during the tutorial sessions, you have to do A1P2 (40 to 50 MCQ)
+
+ Later in 2nd half of lesson : Demo Lab 1 
+ 

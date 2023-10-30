@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TestStudent_3">
+  <ClassDiagramComponents>
+    <Class name="Subject" package="" visibility="public" xPosition="328.0" yPosition="48.0">
+      <Fields>
+        <Field name="code" type="String" visibility="private"/>
+        <Field name="mark" type="int" visibility="private"/>
+        <Field name="g" type="UOWGrade" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="code"/>
+          <Argument type="int" name="mark"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Subject" name="s"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCode" returnType="String" visibility="public"/>
+        <Method name="getMark" returnType="int" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="String" name="code"/>
+          <Argument type="int" name="mark"/>
+        </Method>
+        <Method name="processGrade" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Student" package="" visibility="public" xPosition="643.0" yPosition="6.0">
+      <Fields>
+        <Field name="NO" type="int" visibility="private" isStatic="true"/>
+        <Field name="id" type="int" visibility="private" isFinal="true"/>
+        <Field name="s1" type="Subject" visibility="private"/>
+        <Field name="s2" type="Subject" visibility="private"/>
+        <Field name="project" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="project"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="project"/>
+          <Argument type="Subject" name="s1"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="project"/>
+          <Argument type="Subject" name="s1"/>
+          <Argument type="Subject" name="s2"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Student" name="s"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="getSubject1" returnType="Subject" visibility="public"/>
+        <Method name="getSubject2" returnType="Subject" visibility="public"/>
+        <Method name="getProject" returnType="boolean" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="boolean" name="project"/>
+        </Method>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="Subject" name="s1"/>
+        </Method>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="Subject" name="s1"/>
+          <Argument type="Subject" name="s2"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TestStudent_3" package="" visibility="public" xPosition="178.0" yPosition="445.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getMark" returnType="int" visibility="private" isStatic="true"/>
+        <Method name="displayGradeInfo" returnType="void" visibility="private" isStatic="true"/>
+        <Method name="constructAList" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Student&gt;" name="alist"/>
+        </Method>
+        <Method name="displayAList" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Student&gt;" name="alist"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Enum name="UOWGrade" package="" visibility="public" xPosition="62.0" yPosition="81.0">
+      <Literals>
+        <Literal name="HD"/>
+        <Literal name="D"/>
+        <Literal name="C"/>
+        <Literal name="P"/>
+        <Literal name="F"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Student" target="Subject" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="s2" source="Student" target="Subject" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="s1" source="Student" target="Subject" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="g" source="Subject" target="UOWGrade" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

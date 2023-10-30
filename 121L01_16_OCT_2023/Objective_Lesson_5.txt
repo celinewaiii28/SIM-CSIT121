@@ -1,0 +1,19 @@
+Objective Lesson 5
+
+- Revisit last 2 examples
+  : Lecture notes examples
+  : Class examples
+  
+- Inheritance - subclasses - superclasses
+  : The is a relationship
+- The use of "extends"
+- The use of super versus the use of "this"
+- The use of protected
+- A list of objects, let Java enjoy the polymorphism!!!
+- May be .... abstract class
+
+ This week, during the tutorial sessions, you have to do A1P2 (40 to 50 MCQ)
+ ==> check whether you are allocated to the correct group, just click A3P2
+ ==> T04 students need to register with me before you can click
+
+ 

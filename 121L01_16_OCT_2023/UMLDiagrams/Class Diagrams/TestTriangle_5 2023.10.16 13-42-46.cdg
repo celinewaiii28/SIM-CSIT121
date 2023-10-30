@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TestTriangle_5">
+  <ClassDiagramComponents>
+    <Class name="Equilateral" package="" visibility="public" xPosition="77.0" yPosition="34.0">
+      <Fields>
+        <Field name="a" type="int" visibility="protected"/>
+        <Field name="isFilled" type="boolean" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="int" name="a"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Equilateral" name="e"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="isFilled" returnType="boolean" visibility="public"/>
+        <Method name="getA" returnType="int" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="area" returnType="double" visibility="public"/>
+        <Method name="perimeter" returnType="int" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Isosceles" package="" visibility="public" xPosition="381.0" yPosition="108.0">
+      <Fields>
+        <Field name="b" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="int" name="a"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Isosceles" name="i"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getB" returnType="int" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+        </Method>
+        <Method name="area" returnType="double" visibility="public"/>
+        <Method name="perimeter" returnType="int" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Triangle" package="" visibility="public" xPosition="714.0" yPosition="209.0">
+      <Fields>
+        <Field name="c" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="int" name="a"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="isFilled"/>
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+          <Argument type="int" name="c"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Triangle" name="t"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getC" returnType="int" visibility="public"/>
+        <Method name="setInfo" returnType="void" visibility="public">
+          <Argument type="boolean" name="inFilled"/>
+          <Argument type="int" name="a"/>
+          <Argument type="int" name="b"/>
+          <Argument type="int" name="c"/>
+        </Method>
+        <Method name="area" returnType="double" visibility="public"/>
+        <Method name="perimeter" returnType="int" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TestTriangle_5" package="" visibility="public" xPosition="122.0" yPosition="421.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="displayInfo" returnType="void" visibility="private" isStatic="true">
+          <Argument type="Equilateral" name="e"/>
+        </Method>
+        <Method name="constructAList" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Equilateral&gt;" name="alist"/>
+        </Method>
+        <Method name="displayAList" returnType="void" visibility="private" isStatic="true">
+          <Argument type="ArrayList&lt;Equilateral&gt;" name="alist"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Triangle" target="Isosceles"/>
+    <IsRelation name="is" source="Isosceles" target="Equilateral"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

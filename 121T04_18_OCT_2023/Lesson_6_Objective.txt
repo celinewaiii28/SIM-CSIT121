@@ -1,0 +1,12 @@
+Lesson 6 objective
+
+- Revisit last example on inheritance
+- Polymorphism
+  : abstract class (probably will see our examples1st before lecture notes examples)
+  : getName and getClass methods
+  : instanceof operator
+  : ....
+  : interface (next week lesson)
+  
+- Around 1:30 pm A1P2
+==> after A1P2, if times permitted demo Lab 2
