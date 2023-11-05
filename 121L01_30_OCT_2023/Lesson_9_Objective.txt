@@ -1,0 +1,19 @@
+Objective 9
+
+ - GUI
+   : An example using netbean
+   : The use of JOptionPane 
+   : Labels
+     ==> with text and images
+	 ==> array of labels
+	 ==> case study: Teach 123    (javax versus javafx)  (jdk 1.8 for javafx)
+    : Text field
+	  ==> driven of events
+	  ==> array of text fields
+	  ==> case study Teach 123    (javax versus javafx)
+      ==> Scope of Lab 3 in order
+	: Buttons
+	  ==> Scope of A3 in order
+	  
+This week: A2P2 (topics up to polymorphism)
+   
